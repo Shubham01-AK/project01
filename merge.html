@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge Sort Visualizer</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            background-color: #0e0d0d;
+        }
+        #array-container {
+            display: flex;
+            align-items: flex-end;
+            border: 1px solid #030303;
+            height: 300px;
+            width: 80%;
+            overflow: hidden; /* Ensure bars do not overflow */
+        }
+        .bar {
+            background-color: #2196F3; /* Blue color for the bars */
+            margin: 0 1px;
+            display: inline-block;
+            position: relative; /* Allows for positioning text inside the bar */
+            transition: height 0.2s;
+        }
+        .bar span {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgb(255, 255, 255); /* Color of the text inside the bars */
+            font-size: 12px; /* Adjust font size as needed */
+            white-space: nowrap;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input {
+            margin: 10px;
+            padding: 10px;
+            font-size: 16px;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="numInput">Enter numbers to sort (comma-separated):</label>
+        <input type="text" id="numInput" placeholder="e.g. 50, 30, 40, 10, 20">
+    </div>
+    <button onclick="startSorting()">Start Sorting</button>
+    <div id="array-container"></div>
+    <script src="merges.js"></script>
+</body>
+</html>

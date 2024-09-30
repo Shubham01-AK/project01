@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.premium-text-bar {
+    background-color: #FFD700; /* Gold color */
+    color: #333; /* Dark text for contrast */
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.premium-text-bar p {
+    margin: 0;
+}
